@@ -18,7 +18,6 @@ async function getWeatherData() {
 document.addEventListener("DOMContentLoaded", () => {
     async function init() {
         WeatherData = await getWeatherData();
-        console.log(WeatherData);
         var weatherDiv = document.createElement("div");
         weatherDiv.classList.add("Weather");
         var weatherTitle = document.createElement("div");
