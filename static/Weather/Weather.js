@@ -1,5 +1,5 @@
 async function getWeatherData() {
-    const WeatherData = await fetch("https://api.openweathermap.org/data/3.0/onecall?lat=-37.88&lon=144.99&exclude=minutely,hourly&appid=ab06455c688a8c26ef9cf43d1d895bd6&units=metric");
+    const WeatherData = await fetch("/weather");
     const WeatherDataJSON = await WeatherData.json();
     const WeatherDataArray = [];
 
