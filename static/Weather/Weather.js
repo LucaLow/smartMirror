@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         for (let x = 0; x<5; x++) {
             let Day = document.createElement("div");
-            Day.classList.add("D1");
+            // Day.classList.add("D1");
             let WeatherText = ""
             
             const dayOfWeek = new Date(WeatherData[x].Date * 1000).getDay();

@@ -8,15 +8,24 @@
     transform: translate(-50%, -50%);
     width: fit-content;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .Weather H1 {
     font-size: 40px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Weather div {
     display: inline-block;
     margin: 5px 0;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
