@@ -10,4 +10,4 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def Index():
 
-    return render_template("Index.html")
+    return render_template("index.html")
