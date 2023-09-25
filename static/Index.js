@@ -4,6 +4,7 @@ function updateClock() {
     clock.innerHTML = new Date().toLocaleTimeString();
 }
 
+updateClock();
 // This will be to control a clock in index.html
 setInterval(() => {
     updateClock();
