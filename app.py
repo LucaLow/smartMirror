@@ -2,7 +2,6 @@
 
 from flask import Flask, render_template, request, url_for, jsonify
 import datetime as dt
-import meteomatics.api
 
 app = Flask(__name__)
 
