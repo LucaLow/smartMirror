@@ -4,14 +4,21 @@
 
 <html lang="en">
     <head>
+        <script>
+            const widgets = JSON.parse('{{ widgets | tojson | safe }}');
+        </script>
+
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <script src="/static/Index.js"></script>
         <link rel="stylesheet" href="/static/Index.css">
+        {% for i in widgets.keys() %}
+            <script src="/static/{{ i }}/{{ i }}.js"></script>
+            <link rel="stylesheet" href="/static/{{ i }}/{{ i }}.css">
+        {% endfor %}
+
         <title>Home Page</title>
     </head>
 
     <body>
-        <div class="clock" id="clock"></div>
-        
     </body>
 </html>

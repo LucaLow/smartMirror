@@ -1,0 +1,44 @@
+.Weather {
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    text-align: center;
+}
+
+.Weather div {
+    display: inline-block;
+    margin: 10px 0;
+    width: fit-content;
+    /* text-align: left; */
+}
+
+.D1 {
+    color: white;
+    opacity: 1;
+}
+
+.D2 {
+    color: white;
+    opacity: 0.8;
+}
+
+.D3 {
+    color: white;
+    opacity: 0.6;
+}
+
+.D4 {
+    color: white;
+    opacity: 0.4;
+}
+
+.D5 {
+    color: white;
+    opacity: 0.2;
+}
+
