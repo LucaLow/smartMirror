@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             WeatherText += "Wind speed: " + WeatherData[x].WindSpeed + "KPH\n";
             WeatherText += WeatherData[x].weatherDescription + "\n";
             Day.innerText = WeatherText;
+            Day.style.opacity = 1 - (x*0.2);
             weatherDiv.appendChild(Day);
         }
         
