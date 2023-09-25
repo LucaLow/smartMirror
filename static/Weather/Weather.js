@@ -8,6 +8,7 @@ async function getWeatherData() {
         WeatherDataObject.temperatureRange = "max: " + Math.round(WeatherDataJSON.daily[i].temp.min) + ", min: " + Math.round(WeatherDataJSON.daily[i].temp.max) + "°C";
         WeatherDataObject.weatherDescription = WeatherDataJSON.daily[i].summary;
         WeatherDataObject.WindSpeed = Math.round(WeatherDataJSON.daily[i].wind_speed * 3.6);
+        WeatherDataObject.Date = WeatherDataJSON.daily[i].dt;
         WeatherDataArray.push(WeatherDataObject);
     }
     return WeatherDataArray;
@@ -31,8 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
             let Day = document.createElement("div");
             Day.classList.add("D1");
             let WeatherText = ""
+            
+            const dayOfWeek = new Date(WeatherData[x].Date * 1000).getDay();
+            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const dayOfWeekString = daysOfWeek[dayOfWeek];
+
+            WeatherText += dayOfWeekString + "\n";
             WeatherText += WeatherData[x].temperatureRange + ", ";
-            WeatherText += "Wind speed: " + WeatherData[x].WindSpeed + "KPH\n";
+            WeatherText += "Wind speed: " + WeatherData[x].WindSpeed + "km/h\n";
             WeatherText += WeatherData[x].weatherDescription + "\n";
             Day.innerText = WeatherText;
             Day.style.opacity = 1 - (x*0.2);
