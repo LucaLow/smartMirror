@@ -1,0 +1,18 @@
+.clock {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px #0ff,
+                 0 0 70px #0ff,
+                 0 0 80px #0ff,
+                 0 0 100px #0ff,
+                 0 0 150px #0ff;
+        
+}
