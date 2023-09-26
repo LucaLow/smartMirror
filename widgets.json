@@ -1,4 +1,5 @@
 {
    "Clock": "50, 20",
-    "Weather": "50, 65"
+    "Weather": "50, 65",
+    "Spotify" : "5, 5"
 }

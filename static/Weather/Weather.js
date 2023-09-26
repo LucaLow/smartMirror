@@ -5,7 +5,7 @@ async function getWeatherData() {
 
     for (let i = 0; i < 5; i++) {
         const WeatherDataObject = {};
-        WeatherDataObject.temperatureRange = "max: " + Math.round(WeatherDataJSON.daily[i].temp.min) + ", min: " + Math.round(WeatherDataJSON.daily[i].temp.max) + "°C";
+        WeatherDataObject.temperatureRange = "min: " + Math.round(WeatherDataJSON.daily[i].temp.min) + ", max: " + Math.round(WeatherDataJSON.daily[i].temp.max) + "°C";
         WeatherDataObject.weatherDescription = WeatherDataJSON.daily[i].summary;
         WeatherDataObject.WindSpeed = Math.round(WeatherDataJSON.daily[i].wind_speed * 3.6);
         WeatherDataObject.Date = WeatherDataJSON.daily[i].dt;

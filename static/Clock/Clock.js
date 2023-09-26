@@ -1,4 +1,4 @@
-const options = { hour12: true, hour: "2-digit", minute: "2-digit", second: "2-digit", fractionalSecondDigits: 1 };
+const options = { hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit", fractionalSecondDigits: 1 };
 
 function updateClock() {
     let clock = document.getElementById("clock");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     init();
 });
-// This will be to control a clock in index.html
+
 setInterval(() => {
     updateClock();
 }, 100);
